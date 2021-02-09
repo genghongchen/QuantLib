@@ -102,14 +102,15 @@ namespace QuantLib {
     
     // gcc reports value collision with heston engine (?!) thats why the name
     namespace LatentModelIntegrationType {
-        typedef 
+
         enum LatentModelIntegrationType {
             #ifndef QL_PATCH_SOLARIS
             GaussianQuadrature,
             #endif
             Trapezoid
             // etc....
-        } LatentModelIntegrationType;
+        };
+
     }
 
     #ifndef QL_PATCH_SOLARIS

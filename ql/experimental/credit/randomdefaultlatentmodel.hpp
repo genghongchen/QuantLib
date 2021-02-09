@@ -818,7 +818,7 @@ namespace QuantLib {
     class RandomDefaultLM : public RandomLM<RandomDefaultLM, copulaPolicy, USNG>
     {
     private:
-        typedef simEvent<RandomDefaultLM> defaultSimEvent;
+        using defaultSimEvent = simEvent<RandomDefaultLM>;
 
         // \todo Consider this to be only a ConstantLossLM instead
         const ext::shared_ptr<DefaultLatentModel<copulaPolicy> > model_;
